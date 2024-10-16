@@ -5,6 +5,9 @@ import articles from '../../data/article-content';
 // pages
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 
+//components
+import CommentsList from '../../components/CommentList/CommentList';
+
 import axios from 'axios';
 
 
@@ -45,6 +48,7 @@ const ArticlePage = () => {
         {article.content.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
         ))}
+        <CommentsList comments={articleInfo.comments} />
         </>
     );
 }
