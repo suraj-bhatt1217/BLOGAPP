@@ -7,6 +7,7 @@ import NavBar from './components/NavBar/NavBar'
 import HomePage from './pages/HomePage/HomePage'
 import AboutPage from './pages/AboutPage/AboutPage'
 import ArticlesListPage from './pages/ArticlesListPage/ArticlesListPage'
+import ArticlePage from './pages/ArticlePage/ArticlePage'
 
 // css
 import './App.css'
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/articles" element={<ArticlesListPage />} />
+            <Route path="/articles/:articleId" element={<ArticlePage />} />
           </Routes>
         </div>
       </div>
